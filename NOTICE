@@ -1,0 +1,7 @@
+The seeded-canvas protocol, empty thought scaffold, single-slot verification,
+and Jev response conventions follow the vLLM contributors' Apache-2.0 example:
+https://github.com/vllm-project/vllm/tree/5ba2e3090b4c6bb6d5b4fd8ed3045107e787309e/examples/features/structured_diffusion
+Copyright contributors to the vLLM project.
+
+This project is an independent implementation and is not the proprietary Jev
+service. Model weights retain their upstream license and usage terms.

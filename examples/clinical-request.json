@@ -1,0 +1,40 @@
+{
+  "state": "SYNTHETIC RECORD. 2026-04-15 oncology visit: Biopsy confirms lung adenocarcinoma. The clinician documents ECOG performance status 1. No fever or chills. The patient's mother had breast cancer. Smoking history is not documented.",
+  "questions": {
+    "fever_documented": {
+      "type": "noul",
+      "instructions": "Does this visit explicitly document that the patient currently has fever?",
+      "criteria": {
+        "true": "Current fever is explicitly present.",
+        "false": "Current fever is explicitly denied or not documented as present."
+      }
+    },
+    "histology": {
+      "type": "choice",
+      "instructions": "What is the patient's documented lung cancer histology?",
+      "criteria": {
+        "adenocarcinoma": "Explicitly documented adenocarcinoma",
+        "squamous": "Explicitly documented squamous cell carcinoma",
+        "small_cell": "Explicitly documented small cell carcinoma",
+        "unknown": "Not documented or conflicting evidence"
+      }
+    },
+    "ecog": {
+      "type": "score",
+      "instructions": "For this synthetic record, ECOG is explicitly documented. Select the documented ECOG level. The returned score is the expected index of these ordered levels.",
+      "criteria": ["ECOG 0", "ECOG 1", "ECOG 2", "ECOG 3", "ECOG 4"]
+    },
+    "smoking_status": {
+      "type": "choice",
+      "instructions": "What smoking status is documented? Use unknown when the record does not say.",
+      "criteria": {
+        "current": "Current smoker",
+        "former": "Former smoker",
+        "never": "Explicitly documented never smoker",
+        "unknown": "Not documented or conflicting evidence"
+      }
+    }
+  },
+  "samples": 1,
+  "seed": 42
+}

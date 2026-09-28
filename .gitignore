@@ -1,0 +1,12 @@
+.venv/
+.venv-gpu/
+.uv-cache/
+.runtime-cache/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+dist/
+.env
+*.log
+outputs/
